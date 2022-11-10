@@ -1,0 +1,176 @@
+/* main {
+  margin-top: 2rem;
+} */
+.myfirstsection {
+  background: url(ks.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 20%;
+  /* border: 5px dashed red;  */
+  color: white;
+  filter: grayscale(50%) opacity(80%);
+  /* background-origin: border-box; */
+  background-clip: border-box;
+  /* background-image: radial-gradient(circle 80px, red, blue, green); */
+  width: 100vw;
+  height: 33vh;
+  /* margin: 10px; */
+  /* padding: 10px; */
+
+  /* box-sizing: content-box;---------------------> this is by ddefault*/
+  position: relative;
+}
+@media (min-width: 40rem) {
+  .myfirstsection {
+    height: 40vh;
+  }
+}
+.myfirstsection h1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0px;
+  padding-right: 2rem;
+
+  /* padding: 3px; */
+  color: rgb(248, 253, 253);
+  position: absolute;
+
+  bottom: 0%;
+  right: 0px;
+  width: 100%;
+  text-align: right;
+  font-size: 1.6rem;
+}
+@media (min-width: 40rem) {
+  .myfirstsection h1 {
+    font-size: 2.4rem;
+  }
+}
+
+.mysecondsection {
+  background-color: #1f8e1f;
+  display: inline-block;
+  margin: 2px;
+  padding: 1rem;
+  text-align: center;
+  color: #fdfcfb;
+  font-family: "Oxygen Mono", monospace;
+  border-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#section-2 {
+  text-align: center;
+  background-color: rgb(173 208 209);
+}
+
+.plan {
+  border: 1px solid green;
+  color: rgb(19, 107, 19);
+  text-align: center;
+  background-color: rgb(183, 218, 170);
+  margin: 0.5rem 0rem;
+  padding: 1.5rem 0rem;
+  width: 100%;
+}
+@media (min-width: 40rem) {
+  .plan-div {
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+  .plan {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    min-width: 12.8rem;
+    max-width: 21rem;
+  }
+}
+.plan-detail {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.plan-details {
+  margin: 10px 10px;
+}
+
+.hilighted {
+  background-color: green;
+  color: white;
+  box-shadow: 3px 3px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.plan-recommended {
+  padding: 0px 5px;
+  background-color: white;
+  color: green;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan-type {
+  background-color: rgb(16, 87, 16);
+  color: whitesmoke;
+}
+
+.plan-price {
+  color: rgb(97, 94, 94);
+}
+
+.hilighted .plan-price {
+  color: black;
+}
+
+.review {
+  background-color: rgb(28 80 9);
+  color: white;
+
+  text-align: center;
+}
+
+.review-heading {
+  font-family: "Montserrat", sans-serif;
+  padding: 2rem;
+  color: aliceblue;
+}
+
+.review-image {
+  padding: 20px;
+  background-color: rgb(90, 138, 87);
+  border-radius: 50%;
+  height: 128px;
+  width: 128px;
+  margin: 1rem auto;
+  border: 2px solid white;
+}
+
+.review-experties {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.review-experty {
+  padding: 0.2rem 0;
+  /* width: 30%;
+  
+  /* display: inline-block; */
+  vertical-align: top;
+}
+
+.review-experty__description {
+  margin-bottom: 3rem;
+  text-align: center;
+  vertical-align: top;
+  font-weight: bold;
+  font-size: 17px;
+}
+@media (min-width: 40rem) {
+  .review-experty {
+    width: 30%;
+    display: inline-block;
+    max-width: 21rem;
+  }
+}

@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* box-sizing: border-box;-------->we can't set this to body because section is block level element so that browsers defaults will overwrite it so we have to use universal selector because  it has high spacificity */
+  margin: 0rem 0rem;
+  /* margin-top: 30px; */
+  /* font-family: 'Montserrat', sans-serif; */
+}
+
+.backdrop {
+  position: fixed;
+  display: none;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0px;
+  left: 0px;
+}
+
+.modal {
+  position: fixed;
+  background-color: white;
+  top: 10%;
+  left: 30%;
+  border: 2px solid rgb(235, 161, 34);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  width: 38%;
+  text-align: center;
+  padding: 1rem;
+  display: none;
+  z-index: 200;
+}
+
+.modal__title {
+  margin: 0 0 1rem 0;
+}
+
+.modal__action {
+  text-align: center;
+}
+
+.modal__action {
+  border: 1px solid green;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+
+  cursor: pointer;
+
+  font: inherit;
+  margin: 1rem 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.modal__action:hover,
+.modal__action:active {
+  background-color: rgb(249, 152, 152);
+}
+
+.modal__action--negative {
+  background-color: green;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background-color: rgb(76, 193, 76);
+}
+
+main {
+  margin-top: 3.2rem;
+  min-height: calc(100vh - 3.125rem - 4.25rem);
+}
+@media (min-width: 40rem) {
+  main {
+    min-height: calc(100vh - 3.2rem - 3.125rem);
+  }
+}
+.myheader {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  position: fixed;
+  top: 0px;
+  z-index: 6;
+  margin: 0px 0px;
+  background: rgb(21, 21, 20);
+  width: 100%;
+  padding: 0px 0px;
+}
+@media (min-width: 40rem) {
+  .myheader {
+    text-align: right;
+  }
+}
+
+.headerdiv {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.myheader-div__brand {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: rgb(52, 241, 52);
+  font-size: large;
+  font-weight: bold;
+}
+.toggle-button__bar {
+  margin: 0.5rem 0rem;
+}
+.my-nav {
+  display: none;
+}
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+}
+@media (min-width: 40rem) {
+  .my-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100vw - 7rem);
+  }
+}
+
+.my-nav__items {
+  vertical-align: middle;
+  margin: 0px;
+  padding-left: 0;
+  padding: 0px;
+}
+
+.my-nav__item {
+  margin: 0rem 1rem;
+  display: inline-block;
+}
+
+.my-nav__item a,
+.mobile-nav__items a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(52, 241, 52);
+}
+
+.my-nav__item a:hover,
+.my-nav__item a:active,
+.mobile-nav__item a:hover,
+.mobile-nav__item a:active {
+  color: white;
+  /* border-bottom: 4px solid white; */
+}
+
+.my-nav__item--CTA a,
+.mobile-nav__item--cta a {
+  padding: 8px;
+  color: white;
+  background: rgb(38, 190, 38);
+  border-radius: 12px;
+}
+
+.my-nav__item--CTA a:hover,
+.my-nav__item--CTA a:active,
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active {
+  color: green;
+  background: white;
+}
+
+.btn {
+  font: inherit;
+  background-color: rgb(16, 87, 16);
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 5px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover,
+.btn:active {
+  color: rgb(16, 87, 16);
+  background-color: white;
+}
+
+.main-footer__links {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background-color: black;
+}
+
+.main-footer__link {
+  color: white;
+  display: inline-block;
+  margin: 0rem 3.125rem;
+}
+
+.main-footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: rgb(189, 186, 186);
+}
+.mobile-nav {
+  display: none;
+  z-index: 101;
+  position: fixed;
+  height: 100vh;
+  width: 70vw;
+  top: 0;
+  left: 0;
+  background: rgb(61, 60, 60);
+}
+.mobile-nav__items {
+  list-style: none;
+  margin: 10% auto;
+  padding: 0px;
+  text-align: center;
+}
+.mobile-nav__item {
+  font-size: 1.4rem;
+  margin: 2rem auto;
+}
+.mobile-nav__items a {
+  /* font-weight: bold;
+  color: rgb(52, 241, 52); */
+  margin: 20px;
+  text-decoration: none;
+}
+/* .main-footer {} */
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0%;
+  vertical-align: middle;
+}
+.toggle-button:focus {
+  outline: none;
+}
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background-color: rgb(220, 235, 220);
+
+  display: block;
+  margin: 0.6rem 0;
+}
+.open {
+  min-width: 9.1rem;
+
+  padding: 0.3rem;
+  display: block !important;
+}
+.main-footer__link {
+  /* margin-top: 1rem; */
+  padding: 0.5rem 0;
+  display: block;
+}
+@media (min-width: 40rem) {
+  .main-footer__link {
+    display: inline-block;
+    margin: 0.5rem 4rem;
+  }
+}

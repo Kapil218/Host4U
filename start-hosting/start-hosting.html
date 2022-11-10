@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MYweb</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../sharead.css" />
+    <link rel="stylesheet" href="start-hosting.css" />
+  </head>
+
+  <body>
+    <div class="backdrop"></div>
+    <div class="plan-background"></div>
+    <header class="myheader">
+      <div class="headerdiv">
+        <button class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+        </button>
+        <a class="myheader-div__brand" href="../index.html">uHost</a>
+      </div>
+      <nav class="my-nav">
+        <ul class="my nav__items">
+          <li class="my-nav__item">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="my-nav__item">
+            <a href="../packages/index.html">Packages</a>
+          </li>
+          <li class="my-nav__item">
+            <a href="../customers/index.html">Customers</a>
+          </li>
+          <li class="my-nav__item my-nav__item--CTA">
+            <a href="../Start-hosting/index.html">Start-hosting</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <li class="mobile-nav__item">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="../packages/index.html">Packages</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="../customers/index.html">Customers</a>
+        </li>
+        <li class="mobile-nav__item mobile-nav__item--cta">
+          <a href="../start-hosting/index.html">Start Hosting</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="signup-page">
+      <h1 class="signup-title">Awesome! Let's dive right in!</h1>
+      <form action="index.html" class="signup-form">
+        <label for="title">TITLE</label>
+        <select id="title">
+          <option value="mr">Mr.</option>
+          <option value="ms">Ms.</option>
+        </select>
+        <label for="first-name">FIRST NAME</label>
+        <input type="text" id="first-name" />
+        <label for="last-name">LAST NAME</label>
+        <input type="text" id="last-name" />
+        <label for="email">E-MAIL</label>
+        <input type="email" id="email" />
+        <label for="password">PASSWORD</label>
+        <input type="password" id="password" />
+        <input type="checkbox" id="agree-terms" />
+        <label for="agree-terms"
+          >Agree to
+          <a href="#">Terms &amp; Conditions</a>
+        </label>
+        <button type="submit" class="button">Sign Up</button>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <nav>
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="#">Support</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="#">Terms of Use</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="../my.js"></script>
+  </body>
+</html>
